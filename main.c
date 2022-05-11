@@ -133,11 +133,6 @@ void TCA_SPLIT(int lper, int hper )
 	
 }
 
-void TCA0_hardReset(void){
-	TCA0.SINGLE.CTRLA &= ~(TCA_SINGLE_ENABLE_bm);
-	TCA0.SINGLE.CTRLESET = TCA_SINGLE_CMD_RESET_gc;
-}
-
 // -------------------------------------------
 
 int main(){
